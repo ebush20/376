@@ -1,0 +1,40 @@
+      function writeResult(result) {
+            document.getElementById("result").innerHTML = result;
+        }
+        
+        function getValue(id) {
+            return parseFloat(document.getElementById(id).value);
+        }
+        function multiply() {
+            var value1 = getValue("value1");
+            var value2 = getValue("value2");
+            var result = value1 * value2;
+
+            document.getElementById("result").innerHTML = result;
+        }
+
+        function divide() {
+           var value1 = getValue("value1");
+            var value2 = getValue("value2");
+            var result = value1 / value2;
+
+            document.getElementById("result").innerHTML = result;
+        }
+
+        function add() {
+            var value1 = getValue("value1");
+            var value2 = getValue("value2");
+
+            var result = value1 + value2;
+
+            document.getElementById("result").innerHTML = result;
+        }
+
+        function subtract() {
+            var value1 = getValue("value1");
+            var value2 = getValue("value2");
+
+            var result = value1 - value2;
+
+            document.getElementById("result").innerHTML = result;
+        }
