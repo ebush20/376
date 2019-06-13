@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Lesson 5</title>
+
+        <script>
+
+        function printSquares() {
+            var items = "";
+
+            for (var i = 1; i <= 10; i++) {
+                items += "<li>" + Math.pow(i, 2) + "</li>";
+            }
+
+            document.getElementById("squares").innerHTML = items;
+        }
+        
+        function printPowers() {
+            var items = "";
+            
+            for (var i = 0; i <= 10; i++) {
+                items += "<li>" + Math.pow(2, i) + "</li>";
+            }
+            
+            document.getElementById("powers").innerHTML = items;
+        }
+
+        function printCubics() {
+            var number = parseInt(document.getElementById("number").value);
+            var items = "";
+            
+            for (var i = 0; i < number; i++) {
+                items += "<li>" + Math.pow(i, 3) + "</li>";
+            }
+            
+            document.getElementById("cubics").innerHTML = items;
+        }
+        //
+
+        </script>
+    </head>
+
+    <body>
+
+        <h1>JavaScript Lesson 5</h1>
+
+        <p>
+            The focus of this lesson is <b>for</b> loops. We will use a for loop to print the
+            first 10 square numbers when you click the button.
+        </p>
+
+        <button type="button" onclick="printSquares()">Click for Square Numbers!</button>
+
+        <ol id="squares"></ol>
+
+        <hr />
+
+        <h2>Example 1</h2>
+        
+        <p>The purpose of this function is to find the second powers</p>
+        <button type="button" onclick="printPowers()">Click for Numbers to the Second Power!</button>
+        
+        <ul id="powers"></ul>
+        
+        <hr />
+
+        <h2>Example 2</h2>
+
+        <form>Insert number</form><input type="text" id="number" name="number" size="5" /></form>
+        <button type="button" onclick="printCubics()">Click for Cubic Numbers!</button>
+        
+        <ul id="cubics"></ul>
+        
+    </body>
+</html>

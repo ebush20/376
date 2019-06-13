@@ -1,0 +1,47 @@
+#table {
+    fill: green;
+    stroke-width: 5pt;
+    stroke: black;
+    
+}
+
+#background {
+    fill: #703010;
+    stroke-width: 5pt;
+    stroke: black;
+}
+
+.card {
+    font-size: 300pt;
+}
+
+#card1 {
+    fill: lightblue;
+    stroke: black;
+    stroke-width: 5pt;
+}
+
+#card2 {
+    fill: pink;
+    stroke: black;
+    stroke-width: 5pt;
+}
+
+#card3 {
+    fill: lightyellow;
+    stroke-width: 5px;
+    stroke: black;
+}
+
+#title {
+    fill: black;
+    font-size: 70pt;
+    font-style: bold;
+    stroke: white;
+    stroke-width: 1px;
+}
+
+#buttontext {
+    font-size: 24pt;
+    font-style: bold;
+}

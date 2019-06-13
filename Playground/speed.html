@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Speed</title>
+        <script>
+        function checkSpeed() {
+            var result ="";
+            
+            var speed = parseInt(document.getElementById("speed").value);
+            if (isNaN(speed)) {
+                result = "That's not a number!";
+            } else {
+                var scale = document.getElementById("scale").value;
+                if (scale == "KPH") {
+                    speed = speed / 1.609;
+                }
+
+                if (speed < 30) {
+                    result = "Too slow";
+                } else if (speed > 60) {
+                    result = "Too fast";
+                } else {
+                    result = "Perfecto";
+                }
+            }
+
+            document.getElementById("result").innerHTML = result;
+        }
+        </script>
+    </head>
+    <h1>WHAT IS YOUR SPEED!</h1>
+    <form>
+    What's your speed?
+    <input type="text" id="speed" name="speed" size="5" /> 
+    <select id="scale" name="scale">
+                <option value="MPH">MPH</option>
+                <option value="KPH">KPH</option>
+            <select>
+     <button type="button" onclick="checkSpeed()">Analyze</button>
+    </form>
+    <h2 id="result"></h2>
+</html>
